@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavSide from '../nav-side/';
-import NavTop from '../nav-top/';
+
+import NormalLoginForm from '../login-side/';
 import './index.css';
 
 class Layout extends Component {
@@ -11,9 +11,9 @@ class Layout extends Component {
 
     render() {
         return (
-            <div id="wrapper">
-                <NavSide />
-                <NavTop />
+            <div>
+                <NormalLoginForm />
+
                 {this.props.children}
             </div>
 
